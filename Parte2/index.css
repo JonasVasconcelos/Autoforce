@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 1440px;
+  height: 2358px;
+  background: #FAFAFA;
+}
+
+header {
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0 165px;
+  border: 1px solid black;
+}
+
+.header-title {
+  display: flex;
+  justify-content: space-around;
+  width: 255px;
+  padding: 16px 0 16px 0;
+  border: 1px solid black;
+}
+
+#logo-dealer {
+  width: 162px;
+}
+
+#logo-bwm {
+  width: 48px;
+}
+
+.header-contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  height: 40px;
+  margin: 20px 0;
+  border: 1px solid black;
+}
+
+.header-contacts-links img {
+  width: 160px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+main {
+  padding: 0 165px;
+  width: 1440px;
+  height: 2278px;
+}
+
+.nav-controls {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  height: 48px;
+  border: 1px solid black;
+}
+
+.component-ofertas {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.main-serie {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #000000;
+  border: 1px solid black;
+}
+
+.announcement {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #666666;
+  border: 1px solid black;
+}
+
+.price {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #333333;
+}
+
+.details {
+  display: flex;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 100px;
+}
+
+.info {
+  flex-direction: column;
+}
+
+.details-title {
+  position: absolute;
+  width: 126px;
+  height: 33px;
+  left: 830px;
+  top: 314px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.info-item {
+  height: 44px;
+}
+
+.info-item-title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.info-item-value {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3754E2;
+}
+
+#info-item-1 {
+  position: absolute;
+  width: 21.79px;
+  height: 24px;
+  left: 830px;
+  top: 379px;
+  display: flex;
+}
