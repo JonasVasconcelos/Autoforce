@@ -4,9 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Desafio Genius - Figma - AutoForce</title>
   <link rel="stylesheet" href="./index.css">
-  <title></title>
 </head>
 <body>
   <header>
@@ -17,33 +16,46 @@
     </div>
     <div class="header-contacts">
       <a class="header-contacts-links" href="LINK DE TELEFONES">
-        <img src="./Images/Component 1.png" alt="Dealer title">
+        <div class="btn tel">
+          <img src="./Images/Caminho 482.svg" alt="">
+          LIGUE AGORA
+        </div>
       </a>
       <a class="header-contacts-links" href="LINK DE WHATSAPP">
-        <img src="./Images/Component 2.png" alt="Line 6">
+        <div class="btn whatsapp">
+          <img src="./Images/Vector.svg" alt="">
+          WHATSAPP
+        </div>
       </a>
     </div>
   </header>
   <main>
-    <div class="nav-controls">
-      <span class="component-ofertas">Ofertas → Novo Série 1</span>
-      <a class="component-ofertas">Voltar para página anterior</a>
+    <div class="nav">
+      <div class="nav-controls">
+        <span class="component-ofertas">Ofertas → 
+          <span class = 'text-decoration-underline'> Novo Série 1</span>
+        </span>
+        <a class="component-ofertas">Voltar para página anterior</a>
+      </div>
+      <div class="main-serie">BWM Série 4 Cabrio</div>
     </div>
-    <div class="main-serie">BWM Série 4 Cabrio</div>
     <div class="announcement">
       <p>Descubra o BWM Série 4 Cabrio</p>
       <p>Cliente On-line tem Condições Especiais e aqui na Dealer BWM!</p>
-      <p class="price">A partir de <strong>R$ 179.950</strong></p>
+      <div class="div-price">
+        <img src="./Images/Retângulo 207.png" alt="">
+        <p class="price">A partir de <strong>R$ 179.950</strong></p>
+      </div>
     </div>
     <div class="details">
       <img src="./Images/image 20.png">
-      <div class="details info">
+      <div class="details-flex-column">
         <p class="details-title">Destaques</p>
-        <div>
+        <div class="details-grid">
           
           <div id="info-item-1" class = "info-item">
-            <img id='details-img-1' src="./Images/Group 83.png" alt="">
-            <div class="flex-column">
+            <img src="./Images/Group 83.png" alt="">
+            <div class="details-info-item">
               <p class='info-item-title'>Consumo</p>
               <p class='info-item-value'>14,7 km/l</p>
             </div>
@@ -51,7 +63,7 @@
 
           <div id="info-item-2" class = "info-item">
             <img id='details-img-2' src="./Images/icon_cilindrada.png" alt="">
-            <div class="flex-column">
+            <div class="details-info-item">
               <p class='info-item-title'>Cilindrada</p>
               <p class='info-item-value'>999 cm³</p>
             </div>
@@ -59,7 +71,7 @@
 
           <div id="info-item-3" class = "info-item">
             <img id='details-img-3' src="./Images/icon_potência.png" alt="">
-            <div class="flex-column">
+            <div class="details-info-item">
               <p class='info-item-title'>Potência</p>
               <p class='info-item-value'>75 cv</p>
             </div>
@@ -67,15 +79,86 @@
 
           <div id="info-item-4" class = "info-item">
             <img id='details-img-4' src="./Images/icon_velocidademáx.png" alt="">
-            <div class="flex-column">
+            <div class="details-info-item">
               <p class='info-item-title'>Velocidade Máx.</p>
               <p class='info-item-value'>154 km/h</p>
             </div>
           </div>
+        </div>
+        
+        <a href="LINK DE WHATSAPP">
+          <div class="interesse">
+            <span>TENHO INTERESSE</span>
+          </div>
+        </a>
+      </div>
+    </div>
 
+    <div class="div-description">
+      <div class="description">
+        <div class="life-is-better">
+          <p>A vida é melhor</p>
+          <p>quando compartilhada. </p>
+          <p>BMW Série 4 Cabrio</p>
+        </div>
+        <div class="performace">
+          <p>A performance irradia de cada ângulo do design inovador do BMW Série 4 Cabrio. Começando pela dianteira, que conta com para-choque clássico dos modelos BMW. Ao correr os olhos pelo design, nota-se imediatamente o teto inclinado e a linha do ombro marcante, que equilibra o centro de gravidade do carro. Voltando-se para as laterais, são os robustos arcos de 10 mm e as incomuns rodas de 21 polegadas que chamam a atenção. Ao chegar na traseira do BMW Série 4 Cabrio, a força do design continua surpreendendo. O para-choque com difusão clássica dos modelos BMW, as lâminas horizontais e teto com spoiler ganham um toque a mais de amplitude devido ao vidro traseiro levemente rebaixado.</p>
         </div>
       </div>
     </div>
+
+    <div class="videos-gallery">
+      <p class="videos-gallery-title">Conheça o BMW Série 4 Cabrio</p>
+      <img src="./Images/image 19.svg" alt="">
+      <img id = 'play' src="./Images/if icon play 211876.svg" alt="">
+    </div>
+
+    <img class="divider" src="./Images/Divider - Galeria de vídeos.png" alt="">
+
+    <div class="legal-text">
+      <p class = 'legal-text-title'>Texto Legal:</p>
+      Virtus 1.0, 4 portas (cód. BZ23B3), ano/modelo 18/18 à vista a partir de R$ 73490 ou financiado com entrada de R$ 44094 (60%) e mais 24 prestações mensais de R$ 1286. Taxa de juros: 0% a.m. e 0% a.a. Total da operação: R$ 74958. CET máximo para esta operação: 04,75%% a.a. Condições válidas para financiamento pelo Banco Volkswagen. Oferta válida exclusivamente para a cidade de Natal / RN, no período de 30/09/2018 a 31/10/2018 para veículos com pintura sólida.
+    </div>
   </main>
+  <footer>
+    <div class="footer-header">
+      <div class="footer-header-title">
+        <img src="./Images/Dealer Logo.svg" alt="">
+      </div>
+      <div class="footer-header-social-midia">
+        <span>SIGA NOS: </span>
+        <img src="./Images/if_38-instagram_1161954.svg" alt="">
+        <img src="./Images/if_51-linkedin_104452.svg" alt="">
+        <img src="./Images/if_58-youtube_104445.svg" alt="">
+      </div>
+    </div>
+    <div class="company-info">
+      <p>
+        <span class="company-info-title">Razão Social: </span>
+        <span>AUTO FORCE PLATAFORMA DE MARKETING DIGITAL LTDA</span>
+      </p>
+      <p>
+        <span class="company-info-title">CNPJ: </span>
+        <span>22.588.947/0001-06</span>
+      </p>
+      <p>
+        <span class="company-info-title">Endereço Matriz: </span>
+        <span>Av. Prudente de Morais, 3966, Lagoa Nova. Natal/RN –  CEP 59056-200</span>
+        <a class='text-decoration-underline' href="">Ver mapa</a>
+        <span>
+          <img src="./Images/Grupo 3132.svg" alt="">
+        </span>
+      </p>
+    </div>
+    <div class="copyright">
+      <div>
+        <img src="./Images/AF logo.svg" alt="">
+      </div>
+      <div class="copyright-info">
+        <p class="copy">© Copyright 2021 - AutoForce - Todos os direitos reservados</p>
+        <p class="politic">Confira a nossa Politica de privacidade.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

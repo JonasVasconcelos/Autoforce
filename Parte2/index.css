@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('//db.onlinewebfonts.com/c/f4a6fefc7bae496fff97876be7d44802?family=Citroen');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -7,19 +12,22 @@
 body {
   position: relative;
   width: 1440px;
-  height: 2358px;
-  background: #FAFAFA;
+  height: 2328px;
+  background: #FFFFFF;
 }
 
 header {
+  width: 1440px;
   height: 80px;
-  width: 100vw;
   display: flex;
   justify-content: space-between;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  left: 0px;
+  position: absolute;
+  top: 0px;
   padding: 0 165px;
-  border: 1px solid black;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+  z-index: 2;
 }
 
 .header-title {
@@ -27,7 +35,6 @@ header {
   justify-content: space-around;
   width: 255px;
   padding: 16px 0 16px 0;
-  border: 1px solid black;
 }
 
 #logo-dealer {
@@ -44,19 +51,47 @@ header {
   width: 350px;
   height: 40px;
   margin: 20px 0;
-  border: 1px solid black;
 }
 
-.header-contacts-links img {
+a {
+  text-decoration: none;
+}
+
+.btn {
   width: 160px;
   height: 40px;
-  border: 1px solid black;
+  border-radius: 50px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.tel {
+  background: #3754E2;
+}
+
+.whatsapp {
+  background: #4EC859;
 }
 
 main {
-  padding: 0 165px;
   width: 1440px;
-  height: 2278px;
+  height: 1892px;
+  position: absolute;
+  left: 0px;
+  top: 80px;
+}
+
+.nav {
+  background-color: #E5E5E5;
+  padding: 0 165px;
+  height: 108px;
 }
 
 .nav-controls {
@@ -64,7 +99,6 @@ main {
   justify-content: space-between;
   padding-top: 24px;
   height: 48px;
-  border: 1px solid black;
 }
 
 .component-ofertas {
@@ -83,7 +117,6 @@ main {
   font-size: 32px;
   line-height: 44px;
   color: #000000;
-  border: 1px solid black;
 }
 
 .announcement {
@@ -93,7 +126,12 @@ main {
   font-size: 24px;
   line-height: 33px;
   color: #666666;
-  border: 1px solid black;
+  padding: 0 165px;
+  margin-top: 16px;
+}
+
+.div-price {
+  display: flex;
 }
 
 .price {
@@ -103,28 +141,34 @@ main {
   font-size: 32px;
   line-height: 44px;
   color: #333333;
+  padding-left: 10px;
 }
 
 .details {
   display: flex;
+  margin: 0 165px;
+  border-bottom: 3px solid #333333;
+}
+
+.details-flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 125px;
+  height: 246px;
 }
 
 .details-grid {
   display: grid;
-  grid-template-columns: 200px 200px;
-  grid-template-rows: 100px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 45px;
 }
 
-.info {
+.flex-column {
   flex-direction: column;
 }
 
 .details-title {
-  position: absolute;
-  width: 126px;
-  height: 33px;
-  left: 830px;
-  top: 314px;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
@@ -135,6 +179,13 @@ main {
 
 .info-item {
   height: 44px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+}
+
+.details-info-item {
+  padding-left: 15px;
 }
 
 .info-item-title {
@@ -154,11 +205,217 @@ main {
   color: #3754E2;
 }
 
-#info-item-1 {
-  position: absolute;
-  width: 21.79px;
-  height: 24px;
-  left: 830px;
-  top: 379px;
+.interesse {
+  height: 40px;
+  width: 206px;
+  border-radius: 50px;
+  background: #3754E2;
+  color: white;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interesse span {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.divider {
+  padding: 0 165px;
+}
+
+.div-description {
+  background: #E5E5E5;
+  width: 1440px;
+  padding: 40px 165px 34px 165px;
+}
+
+.description {
+  width: 1110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.life-is-better {
+  height: 240px;
+  width: 540px;
+  left: 165px;
+  top: 750px;
+}
+
+.life-is-better p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.performace {
+  height: 244px;
+  width: 540px;
+  left: 735px;
+  top: 750px;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.videos-gallery {
+  padding: 0 165px;
+}
+
+.videos-gallery-title{
+  height: 107px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  padding: 40px 0 34px 0;
+}
+
+#play {
+  position: absolute;
+  left: 47.15%;
+  right: 49.18%;
+  top: 66.5%;
+  bottom: 37.35%;
+}
+
+#video {
+  position: absolute;
+  width: 1108px;
+  height: 623px;
+  left: 167px;
+  background-image: url('./Images/image\ 19.svg');
+  background-size: contain;
+}
+
+.divider2 {
+  border: 1px solid #E1E1E1;
+}
+
+.legal-text {
+  position: absolute;
+  width: 1440px;
+  height: 80px;
+  margin-top: 40px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  padding: 0 165px;
+}
+
+.legal-text-title {
+  font-weight: 700;
+}
+
+footer {
+  position: absolute;
+  width: 1442px;
+  height: 386px;
+  left: 0;
+  top: 1872px;
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.footer-header {
+  margin: 0px 167px;
+  padding: 40px 0 48px 0;
+  height: 111px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.footer-header-social-midia {
+  display: flex;
+  width: 230px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-header-social-midia span {
+  font-family: 'Citroen';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.company-info {
+  margin: 0px 167px;
+  padding: 32px 0;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.company-info span {
+  padding-right: 15px;
+}
+
+.company-info a {
+  padding-right: 8px;
+  color: white;
+}
+
+.text-decoration-underline {
+  text-decoration: underline;
+}
+
+.company-info-title {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.copyright {
+  margin: 0px 167px;
+  padding: 32.5px 0;
+  height: 123px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright-info {
+  text-align: right;
+}
+
+.politic {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.copy {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
 }
