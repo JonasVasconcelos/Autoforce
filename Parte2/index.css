@@ -290,6 +290,12 @@ main {
   right: 49.18%;
   top: 66.5%;
   bottom: 37.35%;
+  opacity: 0.8;
+}
+
+#play:hover {
+  opacity: 1;
+  box-shadow: 11px 20px 19px 7px rgba(0,0,0,0.1);
 }
 
 #video {
