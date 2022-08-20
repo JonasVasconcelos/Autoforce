@@ -19,6 +19,7 @@
 4. [Linguagens, dependencias e libs utilizadas](#linguagens-dependencias-e-libs-utilizadas)
 5. [Principais dificuldades encontradas](#principais-dificuldades-encontradas)
 6. [Extras](#extras)
+7. [Próximos passos](#proximos-passos)
 
 ## Descrição do projeto <a name="descrição-do-projeto"></a>
 
@@ -31,17 +32,17 @@
 
 > Parte I - Manipulando o DOM
  
-[1.](#req1) Adicionar um ícone para o YouTube no header apontando para https://www.youtube.com/channel/UCLI4tg1oh_oLiJJteExJdUQ.
+1. Adicionar um ícone para o YouTube no header apontando para https://www.youtube.com/channel/UCLI4tg1oh_oLiJJteExJdUQ.
 
-[2.](#req2) Crie um novo item dropdown para o menu e o intitule `Veículos`. Os itens `Novos` e `Seminovos` devem ser realocados para esse novo dropdown. O item `Veículos` deve ser o primeiro do menu.
+2. Crie um novo item dropdown para o menu e o intitule `Veículos`. Os itens `Novos` e `Seminovos` devem ser realocados para esse novo dropdown. O item `Veículos` deve ser o primeiro do menu.
 
-[3.](#req3) Modifique o formulário de `Estou Interessado` disponível em https://testes.autoforce.com.br/autoforce-ford/novos/territory-2022.
+3. Modifique o formulário de `Estou Interessado` disponível em https://testes.autoforce.com.br/autoforce-ford/novos/territory-2022.
 <br>
 Adicione os seguintes campos:
 - 1 Select com as opções: `SUV`, `Senda`, `Hatch` e `Pickup`;
 - 1 Textarea com placeholder `Mensagem`.
 
-[4.](#req4) Crie um botão flutuante de WhatsApp. Crie um popup de WhatsApp fixado no canto inferior esquerdo da tela, ao clicar nesse botão três números devem aparecer:
+4. Crie um botão flutuante de WhatsApp. Crie um popup de WhatsApp fixado no canto inferior esquerdo da tela, ao clicar nesse botão três números devem aparecer:
 - Seminovos: +55 (11) 99999-9999;
 - Serviços +55 (11) 11111-11111 e 
 - Central de Vendas: +55 (11) 88888-8888). <br>
@@ -50,12 +51,12 @@ Um novo clique em qualquer um desses números deve encaminhar o usuário diretam
 
 > Parte II - Montando Layout
 
-[1.](#req1-parte2) Codifica a seguinte <a href="https://www.figma.com/file/mEuuuja11kYw9M9swY69wl/Desafio-Genius?node-id=34%3A42
+1. Codifica a seguinte <a href="https://www.figma.com/file/mEuuuja11kYw9M9swY69wl/Desafio-Genius?node-id=34%3A42
 ">interface</a>.
 
-[2.](#req2-parte2) Não há necessidade de criar um dropdown nos botões do header. Crie um hyperlink para o telefone e um para o WhatsApp.
+2. Não há necessidade de criar um dropdown nos botões do header. Crie um hyperlink para o telefone e um para o WhatsApp.
 
-[3.](#req3-parte2) Link do vídeo para a área `Conheça o BMW`: 
+3. Link do vídeo para a área `Conheça o BMW`: 
 https://www.youtube.com/watch?v=cFyrTEYyq64
 
 
@@ -86,7 +87,7 @@ git clone git@github.com:JonasVasconcelos/Autoforce.git
 
 > Parte I
 
-Os requisitos <a name='#req3'>3</a> e <a name='#req4'>4</a> apresentaram inconsistências não explicadas. Para maiores detalhes, veja os scripts.
+Os requisitos `3` e `4` apresentaram inconsistências não explicadas. Para maiores detalhes, veja os scripts.
 
 > Parte II
 
@@ -98,6 +99,16 @@ Portanto, eu direcionei o hyperlink de `LIGUE AGORA` a página real de contatos 
 
 > Parte I
 
-* No requisito <a name='#req1'>1</a> pedia apenas o ícone do Youtube e eu adicionei os ícones das redes Instagram e LinkedIn, além de manter a estilização da página.
+No requisito `1` pedia apenas o ícone do Youtube e eu adicionei os ícones das redes Instagram e LinkedIn, além de manter a estilização da página.
 
-No requisito <a name='#req2'>2</a>
+No requisito `2` eu consegui manter todas as animações dos dropdowns e implementei a função de checagem e validação dos dropdowns ativos.
+
+> Parte II
+
+Na segunda parte, era solicitado a codificação do modelo do figma e os hyperlinks de `LIGUE AGORA` e `WHATSAPP`. Eu consegui manter a estilização da página, implementei a animação do botão do `play`, criei os hyperlink para as redes sociais e para o mapa informando a localidação da matriz.
+
+## Próximos passos <a name=#proximos-passos></a>
+
+1. Reescrever o código usando <a href='https://pt-br.reactjs.org/'>React</a> e <a href='https://redux.js.org/'>Redux</a>.
+
+2. Desenvolver os testes unitários para garantir a renderização e o funcionamento da página.
